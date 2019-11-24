@@ -4,7 +4,7 @@ import { Metrics, ApplicationStyles } from '../../Themes/'
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
   container: {
-    paddingBottom: Metrics.baseMargin
+    paddingBottom: Metrics.baseMargin,
   },
   logo: {
     marginTop: Metrics.doubleSection,
@@ -14,5 +14,14 @@ export default StyleSheet.create({
   },
   centered: {
     alignItems: 'center'
-  }
+  },
+  bodyText:{
+    textAlign: 'center',
+    fontSize: 50,
+    color: 'green',
+    paddingTop: 50,
+  },
+   scroll:{
+     backgroundColor: 'silver',
+   }
 })
