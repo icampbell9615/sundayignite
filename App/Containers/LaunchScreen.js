@@ -16,22 +16,34 @@ let veganImage = require('../Images/vegan.jpg');
 
 export default class LaunchScreen extends Component {
   render () {
+ 
+    const { navigate } = this.props.navigation;
+
     return (
       <View style={styles.mainContainer}>
        <HeaderLanding/>
        <ScrollView style={styles.scroll}>
+
           <PromoFoodItem
+          navigation={navigate}
           image={burgerImage}
           text={"BURGERS"}/>
-          <PromoFoodItem
+          
+          <PromoFoodItem          
+          navigation={navigate}
           image={chickenImage}
           text={"CHICKEN"}/>
+
           <PromoFoodItem
+          navigation={navigate}
           image={pizzaImage}
           text={"PIZZA"}/>
+
           <PromoFoodItem
+          navigation={navigate}
           image={veganImage}
           text={"VEGAN"}/>
+
        </ScrollView>
       </View>
     )
