@@ -1,15 +1,14 @@
 import { StyleSheet } from 'react-native'
-import { Metrics, ApplicationStyles } from '../../Themes/'
+// import { Metrics, ApplicationStyles } from '../../Themes/'
 
 export default StyleSheet.create({ 
-    titleText: {
-        margin: 18, 
-    },
     titleTextContent: {
+        marginTop: 18, 
+    },
+    titleText: {
         fontSize: 24,
-        color: 'green',
+        color: 'black',
         textAlign: 'center',
         fontWeight: '600',
-        
-    }
+    },
 })

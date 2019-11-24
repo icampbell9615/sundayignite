@@ -7,7 +7,7 @@ import styles from './Styles/NavigationStyles'
 // Manifest of possible screens
 const PrimaryNav = createStackNavigator({
   LaunchScreen: { screen: LaunchScreen },
-  FoodScreen: { screen: FoodScreen }
+  FoodScreen: { screen: FoodScreen },
 }, {
   // Default config for all screens
   headerMode: 'none',

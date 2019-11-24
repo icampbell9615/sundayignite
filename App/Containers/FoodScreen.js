@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View } from 'react-native'
+import { Text, View } from 'react-native'
 
 import {Container, Content} from 'native-base'
 
@@ -7,6 +7,8 @@ import {Container, Content} from 'native-base'
 import styles from './Styles/FoodScreenStyles'
 
 import HeaderFood from '../Components/HeaderFood'
+
+import FoodItem from '../Components/FoodItem'
 
 export default class FoodScreen extends Component {
 
@@ -17,12 +19,17 @@ export default class FoodScreen extends Component {
 
   render () {
     return (
-      <View>
+      <Container>
        <HeaderFood navigation={this.props.navigation} />
-       <Content style={styles.title.text}>
-    <Text style={styles.titleText}> {title} </Text>
+       <Content style={styles.titleTextContent}>
+       <Text style={styles.titleText}> {title}</Text>
+
+      
+          <FoodItem />
+          <FoodItem />
+          <FoodItem />
        </Content>
-      </View>
+      </Container>
     )
   }
 }
