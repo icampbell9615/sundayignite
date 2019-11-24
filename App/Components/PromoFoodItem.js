@@ -13,7 +13,9 @@ export default class PromoFoodItem extends Component {
   render () {
     
     return (
-        <TouchableOpacity onPress={()=> this.props.navigation('FoodScreen')}>
+        <TouchableOpacity onPress={()=> this.props.navigation('FoodScreen', {
+          title: this.props.text,
+        })}>
       <View style={styles.foodCard}>
           <View>
               <Image style={styles.promoImage} source={this.props.image} resizeMode={'contain'} blurRadius={5}/>
