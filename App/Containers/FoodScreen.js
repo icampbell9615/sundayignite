@@ -43,6 +43,7 @@ export default class FoodScreen extends Component {
     return (
       <Container>
        <HeaderFood navigation={this.props.navigation} />
+       
        <Content style={styles.titleTextContent}>
        <Text style={styles.titleText}> {title}</Text>
 

@@ -21,7 +21,7 @@ export default class HeaderLanding extends Component {
            </Body>
 
            <Right>
-             <Button transparent onPress={()=> alert("Right button pressed")}>
+             <Button transparent onPress={()=> this.props.navigation.navigate('Cart')}>
                  <Icon style={styles.iconStyle} type="FontAwesome" name="shopping-cart"/>
             </Button>
            </Right>

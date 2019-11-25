@@ -42,7 +42,7 @@ export default class LaunchScreen extends Component {
         onClose={()=> this.closeDrawer()}
         >
       <View style={styles.mainContainer}>
-       <HeaderLanding openDrawer={this.openDrawer}/>
+       <HeaderLanding openDrawer={this.openDrawer} navigation={this.props.navigation}/>
        <ScrollView style={styles.scroll}>
 
           <PromoFoodItem
