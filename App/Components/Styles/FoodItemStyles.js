@@ -2,19 +2,22 @@ import { StyleSheet, Dimensions } from 'react-native'
 
 
 let height = Dimensions.get('window').height;
+let width = Dimensions.get('window').height;
+
+let scale =height/width;
 
 export default StyleSheet.create({
    foodItemView:{
        height: '100%',
        width: height/4,
-       paddingLeft: '5%',
+       paddingLeft: '-5%',
        paddingTop: '5%',
    },
 
    priceView:{
        backgroundColor: 'grey',
-       height: '20%',
-       width: '40%',
+       height: '40%',
+       width: '30%',
        borderRadius: 10,
        justifyContent: 'center',
        zIndex: 5,
@@ -23,27 +26,27 @@ export default StyleSheet.create({
        color: 'white',
        fontSize: 24,
        textAlign: 'center',
-       fontWeight: '400',
+       fontWeight: "400",
    },
    foodImageView:{
        width: '60%',
-       height: '70%',
+       height: '90%',
        position: 'absolute',
        paddingTop: '15%',
        paddingLeft: '10%',
    },
    foodImage:{
-      width: '120%',
-       height: '110%',
+      width: '100%',
+       height: '140%',
        borderRadius: 40,
    },
    foodDescriptionView:{
-       height: '50%',
-       width: '100%',
-     
+       height: '120%',
+       width: '110%',
+       position: 'absolute',
        zIndex: -1,
-       marginLeft: '40%',
-       marginTop: '-5%',
+       marginLeft: '35%',
+       margin: '5%',
        borderRadius: 40,
        backgroundColor: '#F4F4F4',
    },
@@ -52,7 +55,7 @@ export default StyleSheet.create({
     width: '50%',
     height: '100%',
     zIndex: 1,
-    marginLeft: '20%',
+    marginLeft: '40%',
    },
    foodTitle:{
     textAlign: 'center',
@@ -63,7 +66,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontWeight: '400',
     paddingTop: 5,
-    fontSize: 16
+    fontSize: scale * 5,
    },
 
 })

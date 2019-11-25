@@ -15,6 +15,13 @@ export default class PromoFoodItem extends Component {
     return (
         <TouchableOpacity onPress={()=> this.props.navigation('FoodScreen', {
           title: this.props.text,
+          foodImages: this.props.images,
+          foodTitles: this.props.foodTitles,
+          prices: this.props.prices,
+          foodSize: this.props.foodSize,
+          foodDescriptions: this.props.foodDescriptions,
+
+
         })}>
       <View style={styles.foodCard}>
           <View>

@@ -4,7 +4,7 @@ import { Text, View, Image, TouchableOpacity} from 'react-native'
 // Styles
 import styles from './Styles/FoodItemStyles'
 
-let burger = require('../Images/burger.jpg');
+
 export default class FoodItem extends Component {
   render () {
     
@@ -13,19 +13,19 @@ export default class FoodItem extends Component {
            <View style={styles.foodItemView}> 
                
            <View style={styles.priceView}>
-               <Text style={styles.priceText}>10</Text> 
+               <Text style={styles.priceText}>{this.props.price}$</Text> 
           </View>
 
 
              <View style={styles.foodImageView}>
-                 <Image style={styles.foodImage} source={burger} resizeMode='cover'/>
+                 <Image style={styles.foodImage} source={this.props.foodImage} resizeMode='cover'/>
              </View>
 
 
              <View style={styles.foodDescriptionView}>
              <View style={styles.foodTextView}>
-               <Text style={styles.foodTitle}>Title</Text>
-               <Text style={styles.foodDescription}>Some type of description</Text>
+               <Text style={styles.foodTitle}>{this.props.foodTitle}</Text>
+               <Text style={styles.foodDescription}>{this.props.foodDescription}</Text>
             </View>
 
             </View>

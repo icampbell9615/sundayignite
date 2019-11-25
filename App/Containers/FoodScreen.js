@@ -15,19 +15,39 @@ export default class FoodScreen extends Component {
     componentWillMount(){
       const {navigation} = this.props;
       title = navigation.getParam('title', '');
+      foodImages = navigation.getParam('foodImages', '' );
+      foodTitles = navigation.getParam('foodTitles', '');
+      prices = navigation.getParam('prices', '');
+      foodSize = navigation.getParam('foodSize', '');
+      descriptions = navigation.getParam('foodDescriptions', '');
     }
 
   render () {
+
+
+
+    var foodItems = [];
+
+    for(let i=0; i<foodSize; i++){
+      foodItems.push(
+        <View>
+          <FoodItem 
+          foodTitle={foodTitles[i]}
+          price={prices[i]}
+          foodImage={foodImages[i]}
+          foodDescription={descriptions[i]}/>
+        </View>
+      )
+    }
+
     return (
       <Container>
        <HeaderFood navigation={this.props.navigation} />
        <Content style={styles.titleTextContent}>
        <Text style={styles.titleText}> {title}</Text>
 
-      
-          <FoodItem />
-          <FoodItem />
-          <FoodItem />
+      {foodItems}
+       
        </Content>
       </Container>
     )
