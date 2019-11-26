@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {View} from 'react-native'
-// import { Icon, Button} from 'native-base'
-// import { SwipeListView } from 'react-native-swipe-list-view';
+import { Icon, Button, Text} from 'native-base'
+// import { SwipeListView, SwipeRow } from 'react-native-swipe-list-view';
 
 import styles from './Styles/CartItemStyles'
 
@@ -13,23 +13,16 @@ render(){
     return(
 
 <View style={styles.ItemContainer} >
+{/* 
+<SwipeListView>
+   <SwipeRow
+   disableRightSwipe
+   rightOpenValue={-100}
 
-{/* <SwipeListView
-            data={this.state.listViewData}
-            renderItem={ (data, rowMap) => (
-                <View style={styles.rowFront}>
-                    <Text>I am {data.item} in a SwipeListView</Text>
-                </View>
-            )}
-            renderHiddenItem={ (data, rowMap) => (
-                <View style={styles.rowBack}>
-                    <Text>Left</Text>
-                    <Text>Right</Text>
-                </View>
-            )}
-            leftOpenValue={75}
-            rightOpenValue={-75}
-        /> */}
+     
+  
+       />
+       </SwipeListView> */}
         </View>
           )
         }

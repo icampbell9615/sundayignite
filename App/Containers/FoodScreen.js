@@ -32,6 +32,7 @@ export default class FoodScreen extends Component {
       foodItems.push(
         <View>
           <FoodItem 
+          navigation={this.props.navigation}
           foodTitle={foodTitles[i]}
           price={prices[i]}
           foodImage={foodImages[i]}

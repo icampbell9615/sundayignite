@@ -9,7 +9,9 @@ export default class FoodItem extends Component {
   render () {
     
     return (
-        <TouchableOpacity onPress={()=> alert("Food Item pressed")}>
+        <TouchableOpacity onPress={()=> {
+        this.props.navigation.navigate('FoodDetails')
+        }}>
            <View style={styles.foodItemView}> 
                
            <View style={styles.priceView}>
