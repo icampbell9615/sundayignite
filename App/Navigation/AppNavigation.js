@@ -10,13 +10,13 @@ import styles from './Styles/NavigationStyles'
 const PrimaryNav = createStackNavigator({
   LaunchScreen: { screen: LaunchScreen },
   FoodScreen: { screen: FoodScreen },
-  Cart: {screen: Cart},
+  Cart: {screen: Cart },
 }, {
   // Default config for all screens
   headerMode: 'none',
   initialRouteName: 'LaunchScreen',
   navigationOptions: {
-    headerStyle: styles.header
+    headerStyle: styles.header,
   }
 })
 
