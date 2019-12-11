@@ -25,7 +25,7 @@ export default StyleSheet.create({
       height: height/3,
       width: width/2,
       marginLeft: '5%',
-      backgroundColor: 'red'
+     
   },
   NameText: {
      position: 'absolute',
@@ -35,20 +35,47 @@ export default StyleSheet.create({
      marginTop: '30%',
   },
   Price: {
-      marginLeft: '65%',
+      marginLeft: '5%',
       height: height/3,
       width: '30%',
       alignItems: 'center',
-      backgroundColor: 'blue'
+  
   },
   PriceText: {
       position: 'absolute',
       color: 'white',
       fontSize: 35,
       fontWeight: 'bold',
-      textAlignVertical: 'center',
+      marginTop: '50%',
     
-  }
+  },
+  NameAndPrice: {
+    flexDirection: 'row',
+  },
+
+  AddButton: {
+    backgroundColor: 'green',
+    marginLeft: '5%',
+    marginTop: 100,
+    height: 50,
+    borderRadius: 20,
+
+  },
+
+  Addtext: {
+    fontSize: 22,
+    paddingLeft: 10,
+    color: 'white',
+    fontWeight: '500',
+
+  },
+
+  AddIcon: {
+     color: 'white',
+     fontSize: 30,
+     paddingRight: 10,
+     
+  },
 
 })
 

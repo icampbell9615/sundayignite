@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {View} from 'react-native'
-import { Icon, Button, Text} from 'native-base'
-// import { SwipeListView, SwipeRow } from 'react-native-swipe-list-view';
+import { Text } from 'native-base'
+import { SwipeListView, SwipeRow } from 'react-native-swipe-list-view';
 
 import styles from './Styles/CartItemStyles'
 
@@ -13,16 +13,7 @@ render(){
     return(
 
 <View style={styles.ItemContainer} >
-{/* 
-<SwipeListView>
-   <SwipeRow
-   disableRightSwipe
-   rightOpenValue={-100}
-
-     
-  
-       />
-       </SwipeListView> */}
+<Text>{this.props.title}</Text>
         </View>
           )
         }
